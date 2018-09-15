@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#e6e6e6</color>
+    <color name="light_gray">#f5f5f5</color>
+    <color name="blue">#0d9ffb</color>
+    <color name="dark_gray">#b7b7b7</color>
+    <color name="display_formula_text_color">#ccffffff</color>
+    <color name="display_result_text_color">#66ffffff</color>
+    <color name="display_result_exponent_text_color">#40ffffff</color>
+    <color name="pad_numeric_background_color">#3e3e3e</color>
+    <color name="pad_advanced_background_color">#292929</color>
+    <drawable name="pad_advanced_background_press_color">#343434</drawable>
+    <color name="divider_color">#16ffffff</color>
+    <color name="display_top_text_color">#66ffffff</color>
+    <color name="pad_button_operator_text_color">#0d9ffb</color>
+    <color name="pad_button_number_text_color">#CCffffff</color>
+    <color name="pad_background_color">#000000</color>
+</resources>

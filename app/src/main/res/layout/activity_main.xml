@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:alignmentMode="alignBounds"
+    app:background="@color/white"
+    app:columnCount="4"
+    app:rowCount="8"
+    app:useDefaultMargins="false"
+    tools:context="com.eltendawy.mycalculator.MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/math_expression_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="false"
+        android:scrollbars="none"
+        app:layout_columnSpan="4"
+        app:layout_columnWeight="1"
+        app:layout_rowSpan="1"
+        app:layout_rowWeight="4">
+
+        <TextView
+            android:id="@+id/math_expression"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|start"
+            android:paddingStart="16dp"
+            android:singleLine="true"
+            android:textSize="30sp"
+            tools:text="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjjjjjjjjjjjjjjjjj" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="top|center_vertical"
+        android:paddingStart="16dp"
+        android:textSize="18sp"
+        app:layout_columnSpan="4"
+        app:layout_columnWeight="1"
+        app:layout_rowSpan="1"
+        app:layout_rowWeight="2" />
+
+    <TextView
+        android:id="@+id/mc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="mc"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button19"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:padding="0dp"
+        android:text="m+"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="m\u2212"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="mr"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="C"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="÷"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="x"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:longClickable="true"
+        android:onClick="onClick"
+        android:text="del"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="7"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="8"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="9"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="\u2212"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="4"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="5"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="6"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="+"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="1"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="2"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button26"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="3"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button27"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/blue_rectangle"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="="
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowSpan="2"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="%"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+    <TextView
+        android:id="@+id/button22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/item_click_white"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="."
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="4" />
+
+
+</android.support.v7.widget.GridLayout>
